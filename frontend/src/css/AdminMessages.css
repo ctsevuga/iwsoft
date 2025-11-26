@@ -1,0 +1,155 @@
+.admin-wrapper {
+  padding: 40px 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CODE ENTRY BOX */
+
+.code-box {
+  background: linear-gradient(135deg, #ff6a88, #ff99ac);
+  padding: 35px;
+  border-radius: 18px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.lock-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.code-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.code-subtitle {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.code-input {
+  width: 60%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.5rem;
+  text-align: center;
+  background: #fff;
+}
+
+.verify-btn {
+  background: #000000cc;
+  border: none;
+  padding: 12px 18px;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.verify-btn:hover {
+  background: #000;
+}
+
+/* MESSAGES LIST */
+
+.messages-container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.messages-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.no-messages {
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+
+/* Grid Layout */
+.messages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+/* Card */
+.message-card {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 20px;
+  border-radius: 14px;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.message-name {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.message-item {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.message-date {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .code-box {
+    padding: 25px;
+  }
+
+  .messages-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.view-btn {
+  margin-top: 15px;
+  width: 100%;
+  background: #ffffffdd;
+  border: none;
+  padding: 10px;
+  color: #000;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #fff;
+}
+
